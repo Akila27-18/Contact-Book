@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Add New Contact</h2>
+
+<form method="POST" class="mt-4" novalidate>
+  <div class="mb-3">
+    <label for="name" class="form-label">Full Name</label>
+    <input type="text" class="form-control" id="name" name="name" placeholder="John Doe" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="phone" class="form-label">Phone Number</label>
+    <input type="text" class="form-control" id="phone" name="phone" placeholder="555-555-5555" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="email" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="email" name="email" placeholder="example@example.com" required>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Add Contact</button>
+</form>
+{% endblock %}
